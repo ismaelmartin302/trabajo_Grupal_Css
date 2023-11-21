@@ -41,7 +41,11 @@ main legend {
 main .div-colores {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 100px;
-    height: 10em;
+    gap: 1em;
+    width: 15em;
+    height: 15em;
 }
 
+main .div-colores div {
+    border-radius: var(--border-radius);
+}
