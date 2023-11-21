@@ -1,0 +1,47 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+:root {
+    --color-1: #ffffff;
+    --color-2: #ffffff;
+    --color-3: #ffffff;
+    --color-4: #ffffff;
+    --color-5: #ffffff;
+
+    --family-font: 'SF Pro Display', sans-serif;
+
+    --border-radius: 10%;
+    
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    font-family: var(--family-font);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+main fieldset {
+    flex-grow: 1;
+}
+
+main legend {
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+main .div-colores {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100px;
+    height: 10em;
+}
+
