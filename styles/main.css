@@ -9,9 +9,10 @@
 :root {
     --color-form-1: #f2f2f2;
     --color-form-nav: #403f3e;
-    --color-form-3: #bdcfd9;
-    --color-form-body: #2d2d2d;
-    --color-form-5: #262626;
+    --color-form-body: #2f2f2f;
+    --color-form-inside: #2b2b2b;
+    --color-form-font: #ffffff;
+
 
     --family-font: 'SF Pro Display', sans-serif;
 
@@ -23,6 +24,7 @@ body {
     margin: 0;
     font-family: var(--family-font);
     background-color: var(--color-form-body);
+    color: var(--color-form-font);
 }
 
 /* * ------------------------ DISEÑO HEADER ------------------------ */
@@ -53,3 +55,62 @@ header > nav > ul {
 .fa-solid {
     color: var(--color-form-1);
 }
+
+/* * ------------------------ DISEÑO MAIN ------------------------ */
+/* * {border: 1px solid red;} */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > h2 {
+    margin-top: 5vh;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
+    border: 1px solid var(--color-form-nav) ;
+    border-radius: 5px;
+    background-color: var(--color-form-inside);
+    max-width: 600px;
+    width: 60%;
+}
+
+form label {
+    font-size: 1.4em;
+}
+form input, form textarea, button {
+    height: 45px;
+    border: 1px solid var(--color-form-1);
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 0.6vw;
+    margin-bottom: 3.3vw;
+    font-family: var(--family-font);
+    font-size: 1.4em;
+    text-indent: 1em;
+
+}
+
+form textarea {
+    height: 100px;
+}
+
+button {
+    height: 35px;
+    width:max-content;
+    text-indent: 0;
+    align-self: center;
+    border-radius: 4px;
+    border: 0;
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: var(--color-form-inside);
+}
+
