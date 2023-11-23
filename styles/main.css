@@ -1,0 +1,55 @@
+/* * {
+    border: 1px solid red
+} */
+
+
+/* * ----------------------- ESTILOS BASE -------------------------- */
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+:root {
+    --color-form-1: #f2f2f2;
+    --color-form-nav: #403f3e;
+    --color-form-3: #bdcfd9;
+    --color-form-body: #2d2d2d;
+    --color-form-5: #262626;
+
+    --family-font: 'SF Pro Display', sans-serif;
+
+    --border-radius: 1em;
+}
+
+/* * ------------------------ DISEÑO BODY -------------------------- */
+body {
+    margin: 0;
+    font-family: var(--family-font);
+    background-color: var(--color-form-body);
+}
+
+/* * ------------------------ DISEÑO HEADER ------------------------ */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header > nav {
+    display: flex;
+    padding: 0.5em;
+    background-color: var(--color-form-nav);
+    align-items: center;
+    padding: 0em 1em;
+    justify-content: space-between;
+}
+
+header > nav > img {
+    height: 1.2em; 
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;   
+}
+
+.fa-solid {
+    color: var(--color-form-1);
+}
