@@ -96,8 +96,19 @@ article section {
 article img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
     border-radius: 1em;
+}
+
+article .grid-camera-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    text-align: center;
+    padding: 0.5em;
 }
 
 article section:nth-child(1) {grid-area: 1/1/4/4;}
