@@ -67,6 +67,190 @@ main .banner {
     object-fit: cover;
 }
 
+main .contenedorMoviles {
+    width: 80%;
+    height: 70%;
+    margin-left: 12vw;
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: 30% 33% 36%;
+    grid-template-rows: 10% 90% 15%;
+}
+
+main .contenedorMoviles .iphone15Normal, main .contenedorMoviles .iphone15Pro, main .contenedorMoviles .iphone15ProMax {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+main .tituloNormal {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    font-family: var(--family-font);
+    font-size: 2.2vw;
+}
+
+main .tituloPro {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    font-family: var(--family-font);
+    font-size: 2.2vw;
+}
+
+main .tituloProMax {
+    grid-column: 3;
+    grid-row: 1;
+    padding-left: 14%;
+    font-family: var(--family-font);
+    font-size: 2.2vw;
+    
+}
+main .iphone15Normal {
+    width: 22vw;
+    height: 66vh;
+    background-image: url(/assets/15rosa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+main .iphone15Pro {
+    width: 24vw;
+    height: 68vh;
+    background-image: url(/assets/promarino.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+main .iphone15ProMax {
+    width: 25vw;
+    height: 70vh;
+    background-image: url(/assets/problanco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 3;
+    grid-row: 2;
+    
+}
+
+main .colorRosa {
+    border-radius: 50%;
+    background-color: #fee8ea;
+    border: 3px solid #f7cfd0;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 5.1vw;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+main .colorAzul {
+    border-radius: 50%;
+    background-color: rgba(173, 216, 230, 0.404);
+    border: 3px solid #cad5db;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 8.4vw;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+main .colorAzul:hover ~ .iphone15Normal {
+    background-image: url(/assets/15azul.png);
+    transition: 0.5s;
+}
+
+main .colorAmarillo {
+    border-radius: 50%;
+    background-color: #fffae4;
+    border: 3px solid #eae1b6;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 11.7vw;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+main .colorAmarillo:hover ~ .iphone15Normal {
+    background-image: url(/assets/15amarillo.png);
+    transition: 0.5s;
+}
+
+main .colorVerde {
+    border-radius: 50%;
+    background-color: #f5f9ea;
+    border: 3px solid #cbd3bc;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 15vw;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+main .colorVerde:hover ~ .iphone15Normal {
+    background-image: url(/assets/15verde.png);
+    transition: 0.5s;
+}
+
+main .colorMarino {
+    border-radius: 50%;
+    background-color: #575a69;
+    border: 3px solid #313540;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 9.5vw;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+main .colorMarron {
+    border-radius: 50%;
+    background-color: #b0aba5;
+    border: 3px solid #95928d;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 13.1vw;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+main .colorMarron:hover ~ .iphone15Pro {
+    background-image: url(/assets/promarron.png);
+    transition: 0.5s;
+}
+
+main .colorBlanco {
+    border-radius: 50%;
+    background-color: #ebe8e3;
+    border: 3px solid #d9d6cf;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 10vw;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+main .colorNegro {
+    border-radius: 50%;
+    background-color: #555452;
+    border: 3px solid #323335;
+    width: 2.5vw;
+    height: 5.5vh;
+    margin-left: 13.6vw;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+main .colorNegro:hover ~ .iphone15ProMax {
+    background-image: url(/assets/pronegro.png);
+    transition: 0.5s;
+}
+
 /* ? ---------------------- GRID ------------------ */
 article {
     display: grid;
