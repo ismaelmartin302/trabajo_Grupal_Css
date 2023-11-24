@@ -84,6 +84,7 @@ article {
 
     margin: 5em;
     max-width: 100em;
+    transition: 0.5s;
 /*     width: 90vw;
     height: 50vh; */
 }
@@ -151,7 +152,7 @@ article section:nth-child(12) {grid-area: 6/4/7/8;}
 
     gap: 2em;
 
-    background-color: #d4d4d4;
+    background-color: #cdcdcd;
     border-radius: 10em;
     padding: 0.5em;
 }
@@ -166,11 +167,39 @@ article section:nth-child(12) {grid-area: 6/4/7/8;}
 
 .zoom-container .zoom-2 {
     display: flex;
-    background-color: #888888;
+    background-color: #575757;
     border-radius: 100%;
     width: 3em;
     height: 3em;
     align-items: center;
 
     color: yellow;
+}
+
+.imagen1 {
+    min-width: 10em;
+}
+
+@media (width > 820px) {
+    article {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    .imagencentro {
+        width: 90vw;
+        height: 90vh;
+        background-image: url("../assets/foto-camera-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagencentro img, .imagen1, .imagen2 {
+        display: none;
+    }
+    
+    article section img, article section {
+        border-radius: 0;
+    }
 }
