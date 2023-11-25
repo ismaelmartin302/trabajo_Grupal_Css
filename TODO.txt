@@ -1,0 +1,21 @@
+GRID ->
+    #AÑADIR--
+    - texto del hover
+    - video
+
+    #ERRORES--
+    - cuando el grid esta en un tamaño demasiado grande se salen los iconos de accion, noche y face detection
+    - en tamaños concretos se queda 1 o varias secciones sueltas a la izquierda (no tengo ni idea de como solucionar esto)
+    
+    #CAMBIAR--
+    - Cambiar la imagen
+
+FOOTER -> 
+    - Crearlo xd
+
+
+
+
+INSTALAR EXTENSIONES:
+todo
+txt syntax -> contrl shift z

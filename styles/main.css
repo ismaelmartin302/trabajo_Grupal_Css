@@ -15,6 +15,9 @@
     --family-font: 'SF Pro Display', sans-serif;
 
     --border-radius: 1em;
+
+    --border-text-shadow1: 2px 2px 5px black, -2px -2px 5px black, -2px 2px 5px black, -2px -2px 5px black;
+    --border-text-shadow2: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
 }
 
 /* * ------------------------ DISEÑO BODY -------------------------- */
@@ -77,16 +80,13 @@ article {
     display: grid; 
 
     grid-template-rows: repeat(auto-fill, 1fr);
-    grid-template-columns: repeat(auto-fill, 1fr);
-    gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: .5em;
     justify-content: center;
     align-content: center;
 
-    margin: 5em;
-    max-width: 100em;
-    transition: 0.5s;
-/*     width: 90vw;
-    height: 50vh; */
+    margin: 2em;
+    transition: .5s;
 }
 
 article section {
@@ -97,6 +97,7 @@ article section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 article img {
@@ -107,14 +108,19 @@ article img {
     border-radius: 1em;
 }
 
-article .grid-camera-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-    padding: 0.5em;
+section h2 {
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    margin: 100%;
+    text-shadow: var(--border-text-shadow1)
 }
+
+.icons-group {
+    display: flex;
+    flex-flow: row;
+}
+
 .grid-camera-icon p, .grid-camera-icon i, section p {
     display: flex;
     flex-direction: column;
@@ -125,20 +131,9 @@ article .grid-camera-icon {
     padding: 0.5em;
 }
 
-article section:nth-child(1) {grid-area: 1/1/4/4;}
-article section:nth-child(2) {grid-area: 1/4/2/6;}
-article section:nth-child(3) {grid-area: 1/6/2/8;}
-article section:nth-child(4) {grid-area: 2/4/6/8;}
-article section:nth-child(5) {grid-area: 1/10/3/11;}
-article section:nth-child(6) {grid-area: 1/8/3/9;}
-article section:nth-child(7) {grid-area: 1/9/3/10;}
-article section:nth-child(8) {grid-area: 3/8/4/11;}
-article section:nth-child(9) {grid-area: 4/8/7/11;}
-article section:nth-child(10) {grid-area: 4/1/5/4;}
-article section:nth-child(11) {grid-area: 5/1/7/4;}
-article section:nth-child(12) {grid-area: 6/4/7/8;}
-
-
+.grid-camera-icon i {
+    font-size: 3vw;
+}
 
 /* ? GRID ZOOM SECTION */
 .zoom-container {
@@ -176,30 +171,63 @@ article section:nth-child(12) {grid-area: 6/4/7/8;}
     color: yellow;
 }
 
-.imagen1 {
-    min-width: 10em;
+
+/* ^ MEDIA QUERY ------------------------------------------------------------------------------------------------ */
+.full-screen-none {
+    display: none;
 }
 
-@media (width > 820px) {
+@media (width < 520px) { /* Cuando es muy pequeño */
+    .banner {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
     article {
-        display: flex;
+        position: sticky;
         margin: 0;
-        flex-direction: column;
-        transition: 0.5s;
+        display: flex;
+        flex-flow: wrap;
+        background-color: white;
+        width: 100vw;
     }
-    .imagencentro {
-        width: 90vw;
-        height: 90vh;
-        background-image: url("../assets/foto-camera-big.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .imagencentro img, .imagen1, .imagen2 {
-        display: none;
-    }
-    
-    article section img, article section {
+
+    article section:nth-child(2) {width: 43vw;}
+    article section:nth-child(3) {width: 43vw;}
+    article section:nth-child(5) {width: 43vw;}
+    article section:nth-child(6) {width: 43vw;}
+    article section, article img {
         border-radius: 0;
     }
+
+    .full-screen-none {
+        display: unset;
+    }
+
+    .grid-camera-icon i {
+        font-size: 7vw;
+    }
+    
+}
+
+/* TODO  */
+/* FIXME */
+/* ! DECORACION --------------------------------------------------------------- */
+article section .only-on-hover {
+    position: absolute;
+    opacity: 0%;
+    text-shadow: none;
+}
+
+article section:hover > :not(.only-on-hover){
+    background-color: rgb(185, 250, 255);
+    transition: 0.3s;
+    opacity: 0%;
+    transform: rotateY(180deg);
+}
+
+article section:hover .only-on-hover {
+    opacity: 100%;
+    color: #262626;
+    transition: 1s;
 }
