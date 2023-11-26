@@ -4,11 +4,8 @@ GRID ->
     - video
 
     #ERRORES--
-    - cuando el grid esta en un tamaño demasiado grande se salen los iconos de accion, noche y face detection - DONE:
-    - en tamaños concretos se queda 1 o varias secciones sueltas a la izquierda (no tengo ni idea de como solucionar esto) - DONE:
+    - en tamaños concretos se queda 1 o varias secciones sueltas a la izquierda (no tengo ni idea de como solucionar esto)
     
-    #CAMBIAR--
-    - Cambiar la imagen
 
 FOOTER -> 
     - Crearlo xd
