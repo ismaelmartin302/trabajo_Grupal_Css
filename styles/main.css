@@ -172,6 +172,29 @@ section h2 {
 }
 
 
+/* ! DECORACION --------------------------------------------------------------- */
+article section .only-on-hover {
+    position: absolute;
+    opacity: 0%;
+    text-shadow: none;
+    font-size: 100%;
+}
+
+article section:hover > :not(.only-on-hover){
+    background-color: rgb(185, 250, 255);
+    transition: 0.3s;
+    opacity: 0%;
+    transform: rotateY(180deg);
+    cursor: help;
+}
+
+article section:hover .only-on-hover {
+    opacity: 100%;
+    color: #262626;
+    transition: 1s;
+    cursor:help;
+}
+
 /* ^ MEDIA QUERY ------------------------------------------------------------------------------------------------ */
 .full-screen-none {
     display: none;
@@ -207,27 +230,56 @@ section h2 {
     .grid-camera-icon i {
         font-size: 7vw;
     }
+
+    article section .only-on-hover {
+        font-size: 2em;
+    }
     
 }
 
-/* TODO  */
-/* FIXME */
-/* ! DECORACION --------------------------------------------------------------- */
-article section .only-on-hover {
-    position: absolute;
-    opacity: 0%;
-    text-shadow: none;
+@media (width > 1300px) { /* Cuando es muy grande */
+    article {
+        display: flex;
+        flex-flow: wrap;
+        margin: 0;
+        row-gap: 1em;
+        
+    }
+    article section {
+        max-height: 10em;
+        flex-grow: 1;
+        border-radius: unset;
+    }
+    article section img {
+        object-position: center;
+        border-radius: unset;
+    }
+    article section:nth-child(4) {width: 10%;}
+    article section:nth-child(7) {display: none;}
+    article section:nth-child(6) {display: none;}
+    article section:nth-child(9) {display: none;}
+    article section:nth-child(10) {display: none;}
+
+    article section .only-on-hover {
+        text-wrap: nowrap;
+        font-size: 2em;
+    }
+    
 }
 
-article section:hover > :not(.only-on-hover){
-    background-color: rgb(185, 250, 255);
-    transition: 0.3s;
-    opacity: 0%;
-    transform: rotateY(180deg);
-}
 
-article section:hover .only-on-hover {
-    opacity: 100%;
-    color: #262626;
-    transition: 1s;
-}
+/* 
+* VERDE
+^ AMARILLO
+? AZUL
+! ROJO
+& ROSA
+TODO NARANJA
+
+- TODO:
+- FIXME:
+- ALERT:
+- HELP:
+- ERROR:
+- DONE: 
+- ELICEO:*/
