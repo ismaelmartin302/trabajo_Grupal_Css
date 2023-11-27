@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.rrss {
+    width: 25px;
+    height: auto;
+}
