@@ -124,16 +124,16 @@ button {
 }
 
 button:hover {
-    background-color:antiquewhite;
+    filter: blur(100%);
     transition: 0.3s;
     color: var(--color-form-inside);
     cursor: pointer;
+    -webkit-filter: blur(100%);
 }
 
 button:active {
     transition: 0.30s;
     background-color: springgreen;
-    font-weight: bold;
 }
 
 
@@ -157,7 +157,7 @@ form #grid-form {
     align-items: center;
     border: 2px solid var(--color-form-nav);
     border-radius: 30px;
-    margin: 1.4em;
+    margin: 0.7em;
     padding: 0.8em 0.5em 0 0.5em;
     user-select: none;
 }
@@ -172,6 +172,10 @@ form #grid-form {
     transition: 1s;
     background-color: springgreen;
     color: #2b2b2b;
+}
+
+.grid-item:active i {
+    filter: brightness(0%);
 }
 
 @media screen and (max-width: 720px) {
