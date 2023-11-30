@@ -11,8 +11,7 @@ FOOTER ->
     - Crearlo xd
 
 
-
-
-INSTALAR EXTENSIONES:
-todo
-txt syntax -> contrl shift z
+Cambios de eliceo: 
+    - Cambiar lo de 100% biodegradable
+    - cambiar los pinguinos
+    - solucionar la section flotante
