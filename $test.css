@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    width: 40vw;
+    height: 40vw;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+div p {
+    font-size: 2em;
+}
