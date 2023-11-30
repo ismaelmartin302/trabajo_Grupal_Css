@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5c49d20b40.js"></script> <!-- ? Iconos -->
     <link rel="icon" href="assets/apple-logo-grey.ico">
     <link rel="stylesheet" href="styles/main.css">
     <title>Home</title>
@@ -11,16 +10,17 @@
 <body>
     <header>
         <nav>
-            <img src="assets/apple-logo-white.svg" alt="">
+            <img src="assets/apple.svg" alt="logo apple">
             <ul>
-                <li><i class="fa-solid fa-house"></i></li>
-                <li><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><i class="fa-solid fa-bars"></i></li>
+                <li><img src="assets/house.svg"></img></li>
+                <li><img src="assets/cart.svg"></li>
+                <li><img src="assets/bars.svg"></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Envíe su solicitud de datos personales, le responderemos a la brevedad.</h2>
+        <div class="background-blur"></div>
         <form>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -39,19 +39,19 @@
             
             <section id="grid-form">
                 <div class="grid-item item1">
-                    <i class="fa-solid fa-toolbox"></i>
+                    <img src="assets/briefcase.svg">
                     <h3>Empleo y formación</h3>
                 </div>
                 <div class="grid-item item1">
-                    <i class="fa-solid fa-phone"></i>
+                    <img src="assets/phone.svg">
                     <h3>Asistencia telefónica</h3>
                 </div>
                 <div class="grid-item item1">
-                    <i class="fa-solid fa-microchip"></i>
+                    <img src="assets/chip.svg">
                     <h3>Reparación</h3>
                 </div>
                 <div class="grid-item item1">
-                    <i class="fa-solid fa-id-card"></i>
+                    <img src="assets/idcard.svg">
                     <h3>Mi cuenta</h3>
                 </div>
                 
@@ -64,7 +64,7 @@
 
     </main>
     <footer>
-        <hr style="margin: 20px; border: 1px solid grey; opacity: 15%;">
+        <!-- <hr style="margin:0; border: 1px solid grey; opacity: 15%;"> -->
         <div class="footer">
             <p>&copy; 2023 - Todos los derechos reservados.</p>
             <img class="rrss item1" src="assets/x.svg" href="#">
