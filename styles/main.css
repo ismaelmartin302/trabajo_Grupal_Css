@@ -183,6 +183,7 @@ form #grid-form {
     transition: 0.6s;
     background-color: rgb(92, 245, 168);
     color: #2b2b2b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
 .grid-item:active img {
