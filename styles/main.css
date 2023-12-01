@@ -51,14 +51,12 @@ header > nav > ul {
 
 /* * ------------------------ DISEÑO MAIN -------------------------- */
 
-main h1 {
-    position: absolute;
-    font-size: 5vw;
-    left: 50%;
-    top: 10%;
-    color: white;
-    text-shadow: 5px 5px 0px black;
-    padding: 0.2em;
+::-webkit-scrollbar {
+    display: none;
+}
+main {
+    font-family: var(--family-font);
+    position: relative;
 }
 
 main .banner {
@@ -81,6 +79,7 @@ main .contenedorMoviles .iphone15Normal, main .contenedorMoviles .iphone15Pro, m
     display: flex;
     justify-content: center;
     margin: auto;
+    transition: 0.5s;
 }
 
 main .tituloNormal {
@@ -251,6 +250,122 @@ main .colorNegro:hover ~ .iphone15ProMax {
     transition: 0.5s;
 }
 
+main .separacionVertical {
+    width: 80vw;
+    border: 1px solid black;
+}
+
+main .contenedorComparacion {
+    position: relative;
+   
+}
+
+main .divComparacion {
+    width: 80vw;
+    margin-left: 9.2vw;
+    margin-bottom: 15vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 3%;
+}
+
+
+main .contenedorComparacion h2 {
+    margin-left: 10vw;
+    margin-bottom: 0;
+}
+
+main .contenedorComparacion h1 {
+    left: initial;
+    text-shadow: initial;
+    font-size: 3.7vw;
+    top: 3vh;
+    color: black;
+    padding: 0.2em;
+    margin-bottom: 0;
+}
+
+main .contenedorComparacion .divComparacion img {
+    width: 6vw;
+    margin-left: 37.5%;
+    margin-bottom: 2vh;
+}
+
+
+main .contenedorComparacion p {
+    margin: 0;
+}
+
+main .contenedorComparacion .divComparacion div {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.276);
+    padding-top: 5vh;
+}
+
+main .botonCompra {
+    background-color: #262626;
+    border-radius: 7px;
+    width: 8vw;
+    height: 7vh;
+    color: white;
+    font-family: var(--family-font);
+    font-size: 1.2em;
+    box-shadow: 3px 3px 2px 1px grey;
+    position: absolute;
+    top: 43vh;
+    left: 90.5vw;
+    cursor: pointer;
+}
+
+main .botonCompra:hover {
+    opacity: 80%;
+}
+
+main .divCaracteristicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80vw;
+    margin-left: 10vw;
+}
+main .celdaCaracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .divCaracteristicas img {
+    width: 6vw;
+}
+
+main .divCaracteristicas div:nth-child(3) img{
+    width: 4.5vw;
+}
+
+main .divCaracteristicas div:nth-child(4) img{
+    width: 5vw;
+}
+
+main table {
+    margin: auto;
+    border-collapse: collapse;
+    
+}
+main table td, main table tr:nth-child(1) th{
+    padding: 25px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+main table tr:nth-child(1) th:nth-child(1) {
+    border: 0;
+}
+
+main table th {
+    text-align: left;
+    border: 1px solid black;
+    padding: 25px;
+}
 /* ? ---------------------- GRID ------------------ */
 article {
     display: grid;
