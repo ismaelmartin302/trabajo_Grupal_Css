@@ -79,7 +79,7 @@ main .contenedorMoviles .iphone15Normal, main .contenedorMoviles .iphone15Pro, m
     display: flex;
     justify-content: center;
     margin: auto;
-    transition: 0.5s;
+    
 }
 
 main .tituloNormal {
@@ -257,7 +257,10 @@ main .separacionVertical {
 
 main .contenedorComparacion {
     position: relative;
-   
+}
+
+main .contenedorComparacionReducido {
+    display: none;
 }
 
 main .divComparacion {
@@ -484,11 +487,57 @@ main table th {
     }
 
     .botonCompra {
-        /* width: 15vw !important;
+        width: 15vw !important;
         left: 83vw !important;
-        font-size: 2.5vw !important; */
+        font-size: 2.5vw !important;
+        position: sticky !important;
+        /* display: none; */
+    }
+}
+
+
+@media screen and (max-width: 555px) {
+    .contenedorComparacion {
         display: none;
     }
+
+    .contenedorComparacionReducido {
+        display: contents !important;
+    }
+
+    .contenedorComparacionReducido h2 {
+        margin-left: 10vw !important;
+        margin-top: -10vh !important;
+    }
+
+    .divComparacion {
+        grid-template-columns: 1fr 1fr !important;
+        justify-items: center !important;
+        gap: 15px !important;
+    }
+
+    .divComparacion p{
+        margin: 0;
+    }
+
+    .divComparacion img {
+        width: 13vw;
+    }
+
+    .divCaracteristicas {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 15px;
+    }
+
+    .divCaracteristicas img {
+        width: 13vw !important;
+    }
+
+    .divCaracteristicas p {
+        font-size: 3.5vw !important;
+        margin: 0;
+    }
+    
 }
 
 
